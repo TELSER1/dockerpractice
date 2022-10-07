@@ -6,3 +6,4 @@ before_install:
 	- docker build -t testpractice -f Dockerfile.dev .
 script:
 	- docker run -e CI=true testpractice npm run test
+
